@@ -26,11 +26,11 @@ So while David Robinson and others who record their screencasts live might not f
 
 There will be three deliverables for this project:
 
-1. Reserve your dataset on Canvas
-2. Pseudocode script uploaded to github repository
+1. [Plan your dataset and topics](Dataset-Topics.qmd)
+2. [Pseudocode script](pseudocode.qmd) uploaded to github repository
 3. Screencast + github repository
     - Screencast uploaded to YouTube
-    - Approximate time index provided for each of the 4 techniques you're demonstrating
+    - Approximate time index provided for each of the 4 techniques you're demonstrating ([examples](https://www.rscreencasts.com/))
     - Code uploaded to github repository
 
 In lieu of the final exam, you will peer review two classmates' screencasts. 
