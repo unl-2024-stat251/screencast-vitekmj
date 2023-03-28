@@ -29,7 +29,7 @@ There will be three deliverables for this project:
 1. [Plan your dataset and topics](Dataset-Topics.qmd)
 2. [Pseudocode script](pseudocode.qmd) uploaded to github repository
 3. Screencast + github repository
-    - Screencast uploaded to YouTube
+    - Screencast uploaded to YouTube/YuJa
     - Approximate time index provided for each of the 4 techniques you're demonstrating ([examples](https://www.rscreencasts.com/))
     - Code uploaded to github repository
 
