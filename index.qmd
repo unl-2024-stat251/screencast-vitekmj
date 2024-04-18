@@ -83,13 +83,6 @@ inner_join(team_results, public_picks, by = "TEAM")
 ```
 
 ```{r}
-selected_team_results <- team_results %>%
-  select(teams, pake, pase)
+march_madnessts <- data.frame(inner_join(team_results, public_picks, by = "TEAM"))
 
-# Merge on teams in public_picks
-merged_data <- public_picks %>%
-  left_join(selected_team_results, by = "teams")
-
-# View merged data
-print(merged_data)
 ```
