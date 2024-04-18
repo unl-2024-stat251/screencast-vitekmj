@@ -10,14 +10,14 @@ categories: project
 
 Things you plan to investigate using this dataset:
 
-- Thing 1
-- Thing 2
-- Thing 3
+- Correlation betweek PAKE and PASE
+- Correlation between PAKE/game and public pick
+- Correlation between PASE/game and public pick
 
 Stat 251 topics you plan to cover during the analysis:
 
-1. Topic 1
-2. Topic 2
-3. Topic 3
-4. Topic 4
+1. Graph making
+2. Reshaping/filtering data
+3. Data joining
+4. Data manipulation/cleaning
 
