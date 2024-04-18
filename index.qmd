@@ -78,6 +78,8 @@ team_results$R_squared <- r_squared
 # Huh its all the exact same despite being generated from different sources
 
 
+inner_join(team_results, public_picks, by = "TEAM")
+
 ```
 
 ```{r}
