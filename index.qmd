@@ -43,3 +43,51 @@ There will be three deliverables for this project:
 
 In lieu of the final exam, you will peer review two classmates' screencasts. 
 
+
+```{r}
+library(dplyr)
+library(tidyr)
+library(ggplot2)
+# tuesdata <- tidytuesdayR::tt_load('2024-03-26')
+
+team_results <- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2024/2024-03-26/team-results.csv', show_col_types = F)
+public_picks <- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2024/2024-03-26/public-picks.csv', show_col_types = F)
+```
+
+data exploration
+```{r}
+team_results <- select(team_results, TEAMID:GAMES) %>%
+  select(-matches("RANK"))
+
+modify <- mutate
+
+team_results <- team_results %>%
+  modify(
+    PASE_per_game = PASE/GAMES,
+    PAKE_per_game = PAKE/GAMES,
+    PASEG = round(PASE_per_game, digits = 4),
+    PAKEG = round(PAKE_per_game, digits = 4))
+
+# Calculate correlation coefficient between PAKEG and PASEG
+correlation <- cor(team_results$PAKEG, team_results$PASEG)
+
+# Calculate R squared
+r_squared <- correlation^2
+
+team_results$R_squared <- r_squared
+# Huh its all the exact same despite being generated from different sources
+
+
+```
+
+```{r}
+selected_team_results <- team_results %>%
+  select(teams, pake, pase)
+
+# Merge on teams in public_picks
+merged_data <- public_picks %>%
+  left_join(selected_team_results, by = "teams")
+
+# View merged data
+print(merged_data)
+```
