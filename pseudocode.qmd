@@ -22,3 +22,5 @@ I will make sure to include:
 2. Reshaping/filtering data
 3. Data joining
 4. Data manipulation/cleaning
+
+I will use ggplot 2 to show correlations. I will use dplyr to filter and manipulate the given data so it shows the data that I requested instead of non applicable data. I will use joins to merge the 2 tables together and I u
