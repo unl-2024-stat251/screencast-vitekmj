@@ -13,9 +13,9 @@ categories: project
 5: Talk about the steps I have picked (ESPECIALLY WHY) 
 5.5: Talk about data filtering
 6: Explain course content upon implementation of a method
-7: Talk about final results and compare that to expecttaions.
+7: Talk about final results and compare that to expectations.
 
-I should have a final dataframe that shows the correlation between the metrics I have selected. This should be all layed out evenly in one table. These metrics should be the names of teams, underlying data and the manipulated data (ie PAKE/G) and the correlations. 
+I should have a final dataframe that shows the correlation between the metrics I have selected. This should be all layed out evenly in one table via a join based on team name. These metrics should be the names of teams, efficiency data, round selection data and the manipulated data (ie PAKE/G) and the correlations. 
 
 I will make sure to include: 
 1. Graph making
