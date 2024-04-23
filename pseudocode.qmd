@@ -6,3 +6,19 @@ output: html
 categories: project
 ---
 
+1: I will do a small bit explaining what data I have by showing the tidy tuesday site
+2: Then I will talk about about my initial thoughts about the data.
+3: Talk about my project proposal
+4: Talk about my prelim thoughts on its executions.
+5: Talk about the steps I have picked (ESPECIALLY WHY) 
+5.5: Talk about data filtering
+6: Explain course content upon implementation of a method
+7: Talk about final results and compare that to expecttaions.
+
+I should have a final dataframe that shows the correlation between the metrics I have selected. This should be all layed out evenly in one table. These metrics should be the names of teams, underlying data and the manipulated data (ie PAKE/G) and the correlations. 
+
+I will make sure to include: 
+1. Graph making
+2. Reshaping/filtering data
+3. Data joining
+4. Data manipulation/cleaning
