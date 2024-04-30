@@ -13,10 +13,17 @@ re: One metric that attempts to do this is called Performance Against Seed Expec
 
 For example, No. 1 seeds since 1985 are 484-121 at-time in the NCAA Tournament. There have been a total of 36 tournaments played since 1985, each with four No. 1 seeds. So, this means that No. 1 seeds historically win 3.36 games per tournament (484 divided by 36 and then divided by four).
 
+PAKE is the other commonly-used metric that is similar to my PAD metric. PAKE accounts for the true strength of each opponent in each tournament game, regardless of seed, based on Kenpom efficiencies. However, this metric only goes back in time as far as 2002. Refer to kenpom
+
 source: MSU blog https://www.theonlycolors.com/2021/4/12/22379295/ncaa-tournament-performance-metrics-keeping-pase-tom-izzo
 
 2b: Explain about correlation is not causation and how in this data it might affect things. 
 3: Talk about my project proposal about if previous efficiency is at all relevant to current predictions
+
+- Correlation betweek PAKE and PASE
+- Correlation between PAKE/game and public pick
+- Correlation between PASE/game and public pick
+I have since added 
 
 3b: I should have a final dataframe that shows the correlation between the metrics I have selected. This should be all layed out evenly in one table via a join based on team name. These metrics should be the names of teams, efficiency data, round selection data and the manipulated data (ie PAKE/G) and the correlations. 
 
