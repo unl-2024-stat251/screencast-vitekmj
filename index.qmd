@@ -68,22 +68,12 @@ team_results <- team_results %>%
     PASEG = round(PASE_per_game, digits = 4),
     PAKEG = round(PAKE_per_game, digits = 4))
 
-# Calculate correlation coefficient between PAKEG and PASEG
-correlation <- cor(team_results$PAKEG, team_results$PASEG)
+team_results <- team_results %>%
+  mutate(
+    correlation = cor(PAKEG, PASEG),
+    R_squared = correlation^2
+  )
 
-# Calculate R squared
-r_squared <- correlation^2
-
-team_results$R_squared <- r_squared
-# Huh its all the exact same despite being generated from different sources
-
-
-inner_join(team_results, public_picks, by = "TEAM")
-
+march_madnessdf <- inner_join(team_results, public_picks, by = "TEAM")
 ```
 
-```{r}
-march_madnessts <- data.frame(inner_join(team_results, public_picks, by = "TEAM"))
-
-
-```

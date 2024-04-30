@@ -6,21 +6,36 @@ output: html
 categories: project
 ---
 
-1: I will do a small bit explaining what data I have by showing the tidy tuesday site
-2: Then I will talk about about my initial thoughts about the data.
-3: Talk about my project proposal
-4: Talk about my prelim thoughts on its executions.
-5: Talk about the steps I have picked (ESPECIALLY WHY) 
-5.5: Talk about data filtering
-6: Explain course content upon implementation of a method
-7: Talk about final results and compare that to expectations.
+1: I will do a small bit explaining what data I have by showing the tidy Tuesday site.
+2: Then I will talk about about my initial thoughts about the data. This includes relevant stats and my initial details about finding correlation.
 
-I should have a final dataframe that shows the correlation between the metrics I have selected. This should be all layed out evenly in one table via a join based on team name. These metrics should be the names of teams, efficiency data, round selection data and the manipulated data (ie PAKE/G) and the correlations. 
+re: One metric that attempts to do this is called Performance Against Seed Expectation or “PASE.” This metric dates back to at least 2008 and is straight-forward to calculate. It is designed to measure the number of games that a team or coach wins in each tournament relative to the average number of games that a team with the same seed has won historically.
+
+For example, No. 1 seeds since 1985 are 484-121 at-time in the NCAA Tournament. There have been a total of 36 tournaments played since 1985, each with four No. 1 seeds. So, this means that No. 1 seeds historically win 3.36 games per tournament (484 divided by 36 and then divided by four).
+
+source: MSU blog https://www.theonlycolors.com/2021/4/12/22379295/ncaa-tournament-performance-metrics-keeping-pase-tom-izzo
+
+2b: Explain about correlation is not causation and how in this data it might affect things. 
+3: Talk about my project proposal about if previous efficiency is at all relevant to current predictions
+
+3b: I should have a final dataframe that shows the correlation between the metrics I have selected. This should be all layed out evenly in one table via a join based on team name. These metrics should be the names of teams, efficiency data, round selection data and the manipulated data (ie PAKE/G) and the correlations. 
 
 I will make sure to include: 
-1. Graph making
-2. Reshaping/filtering data
-3. Data joining
-4. Data manipulation/cleaning
+A. Graph making via ggplot2 for correlations and potentially other interesting data
+B. Reshaping (in this instance rounding) data  10 digit decimal strings are not super impactful when 5 is more then sufficient.
+C. Data joining by joining the 2 tables of data. Talk about glory of inner joins
+D. Data manipulation/cleaning by assigning variables to new columns et al.
 
-I will use ggplot 2 to show correlations. I will use dplyr to filter and manipulate the given data so it shows the data that I requested instead of non applicable data. I will use joins to merge the 2 tables together and I u
+
+4: Talk about my prelim thoughts on its executions. I will at this point write the code copying from another screen to get correlations (flexible to move the order of this)
+
+4b: Talk about the steps I have picked (ESPECIALLY WHY) such as why a function is chosen
+
+4c: Talk about data filtering and again repeat inner joins are glorious.
+
+4d: Give a basic summary of each "module" while typing and then give a more indepth review of it at end of that section. 
+
+5: Talk about final results and compare that to expectations.
+
+6: Talk about areas which could be furthered explored such as seeing this years efficiency and importing new data like coach longevity. 
+
